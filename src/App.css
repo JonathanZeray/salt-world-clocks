@@ -1,0 +1,44 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1.5rem;
+}
+
+.board__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.board__container--title {
+  text-align: center;
+  background-color: #679000;
+  padding: 0.25rem 0;
+  display: block;
+  width: 100%;
+}
+
+.clock__container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c5d59a;
+  width: 100%;
+}
+
+.clock__container--time {
+  margin-bottom: 0;
+}
+
+@media only screen and (width >= 768px) {
+  .board__container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .clock__container {
+    width: calc(33% - 2.5rem);
+  }
+}
