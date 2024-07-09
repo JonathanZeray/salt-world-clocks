@@ -4,7 +4,7 @@ import { Board } from "./components/Board";
 function App() {
   return (
     <>
-      <h2 className="board__container--title">World Clocks</h2>
+      <h2 className="page__title">World Clocks</h2>
       <Board />
     </>
   );

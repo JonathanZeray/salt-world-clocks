@@ -11,7 +11,7 @@ body {
   gap: 1.25rem;
 }
 
-.board__container--title {
+.page__title {
   text-align: center;
   background-color: whitesmoke;
   padding: 0.25rem 0;
@@ -26,6 +26,7 @@ body {
   align-items: center;
   background-color: whitesmoke;
   width: 100%;
+  border-radius: 6px;
 }
 
 .clock__container--time {
