@@ -11,18 +11,11 @@ const getTimeForTimeZone = (timeZone: string): string => {
   }).format(new Date());
 };
 
-const timeZones = [
-  { city: "Stockholm", timeZone: "Europe/Stockholm" },
-  { city: "London", timeZone: "Europe/London" },
-  { city: "Paris", timeZone: "Europe/Paris" },
-  { city: "Moscow", timeZone: "Europe/Moscow" },
-  { city: "Tokyo", timeZone: "Asia/Tokyo" },
-  { city: "New York", timeZone: "America/New_York" },
-  { city: "Los Angeles", timeZone: "America/Los_Angeles" },
-  { city: "Sao Paulo", timeZone: "America/Sao_Paulo" },
-];
+interface WorldClocksProps {
+  timeZones: { city: string; timeZone: string }[];
+}
 
-export const WorldClocks: React.FC = () => {
+export const WorldClocks: React.FC<WorldClocksProps> = ({ timeZones }) => {
   const [, setTime] = useState(new Date());
 
   useEffect(() => {
