@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Clock } from "./Clock";
 
 const getTimeForTimeZone = (timeZone: string): string => {

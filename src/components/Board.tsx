@@ -1,4 +1,3 @@
-import React from "react";
 import { WorldClocks } from "./WorldClocks";
 
 export const Board: React.FC = () => {
