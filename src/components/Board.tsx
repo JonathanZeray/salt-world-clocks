@@ -37,7 +37,7 @@ export const Board: React.FC = () => {
           onChange={(e) => setNewTimeZone(e.target.value)}
           placeholder="Use Continent/City when writing"
         />
-        <button onClick={handleAddTimeZone}>Add a new Time Zone</button>
+        <button onClick={handleAddTimeZone}>Add new time zone</button>
       </div>
     </>
   );
